@@ -1,0 +1,53 @@
+<?php
+$products=
+[
+    [
+        'product_id'=>'egyuyt8376',
+        'product_name'=>'Shoe',
+        'product_image'=>'product-1.png',
+        'product_price'=>89.2
+    ],
+    [
+        'product_id'=>'sgtey6734r',
+        'product_name'=>'Computer',
+        'product_image'=>'product-2.png',
+        'product_price'=>14.50
+    ],
+    [
+        'product_id'=>'kayetrs563',
+        'product_name'=>'Phone',
+        'product_image'=>'product-3.png',
+        'product_price'=>123
+    ],
+    [
+        'product_id'=>'njsteryuw',
+        'product_name'=>'Apple',
+        'product_image'=>'product-4.png',
+        'product_price'=>70.27
+    ],
+    [
+        'product_id'=>'egskjt8376',
+        'product_name'=>'Cheese',
+        'product_image'=>'product-5.png',
+        'product_price'=>40.35
+    ],
+    [
+        'product_id'=>'swrey6734r',
+        'product_name'=>'Guitar',
+        'product_image'=>'product-6.png',
+        'product_price'=>62.76
+    ],
+    [
+        'product_id'=>'k47gtrs563',
+        'product_name'=>'Skate',
+        'product_image'=>'product-7.png',
+        'product_price'=>83.56
+    ],
+    [
+        'product_id'=>'njsr5ryuw',
+        'product_name'=>'Gromit',
+        'product_image'=>'product-8.png',
+        'product_price'=>27.81
+    ]
+];
+?>

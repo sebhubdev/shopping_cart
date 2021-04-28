@@ -1,0 +1,104 @@
+
+#summary_container 
+{
+    width:30%; box-sizing: border-box; height:100vh; float:left;
+    display: flex; align-items: flex-start; justify-content: center;
+}
+#summary_container .summary 
+{
+    width: 90%; top:8vw; position: relative; height:36vw; background-color: var(--color_2);
+    border-radius: 6px; padding: 2vw;
+}
+#summary_container h2 
+{
+    margin: 0; color:var(--color_4); border-bottom: 2px solid var(--color_5); padding-bottom: 1vw;
+    font-size: 2vw;
+}
+
+#summary_container .value {border-bottom: 1px solid var(--color_1);}
+#summary_container .totals_btn {position: absolute; bottom:0; width:90%; text-align: center;}
+#summary_container .total p {font-size: 1.6vw; font-weight: 700;}
+#summary_container  p 
+{
+    display: inline-block; color: var(--color_4); position: relative; margin: 1vw 0; font-size: 1.2vw;
+}
+#summary_container  p:nth-child(1) {text-align: left; width: 30%;}
+#summary_container  p:nth-child(2) {text-align: right; width: 60%;}
+#summary_container .totals_btn button 
+{
+    border-radius: 6px; right:5vw; border: none; background-color: var(--color_4); color:var(--color_2); 
+    font-weight: 700; width:80%; margin: 2vw 0; font-size: 1.6vw; padding: 0.6vw 0vw; outline: none;
+    cursor: pointer; transition: background-color 0.5s ease, color 0.5s ease;
+}
+#summary_container .totals_btn button:hover
+{
+    background-color: var(--color_1); color:var(--color_4); 
+}
+
+
+#products_detail .container::-webkit-scrollbar {width: .6vw;  border-radius: 2vw;}
+#products_detail .container::-webkit-scrollbar-thumb {background: var(--color_1);border-radius: 2vw;}
+#products_detail .container::-webkit-scrollbar-track {background: var(--color_4);border-radius: 2vw;}
+
+#products_detail .container {max-height: 10vw; overflow-y: auto; margin-top: 2vw;}
+#products_detail .detail_module p {display: inline-block; margin: 0; padding: 0;position: relative;}
+#products_detail .detail_module p:nth-child(1) {width: 50%; text-align: left;}
+#products_detail .detail_module p:nth-child(2) {width: 10%; text-align: right;}
+#products_detail .detail_module p:nth-child(3) {width: 32%; text-align: right;}
+
+#products_detail h3 
+{
+    color:var(--color_4); font-size: 1.4vw; margin: 1vw 0 0 0; font-weight: normal; 
+    border-bottom: 1px solid var(--color_4); padding-bottom: 0.3vw;
+}
+
+#show_summary_btn 
+{
+    display: none; width:20vw; height: 8vw; position: absolute; top:-7vw; left: 40vw; 
+}
+#summary_container .show_summary 
+{
+    width:20vw; border-width: 6vw; border-style: solid; top:-4vw; position: relative;
+    border-radius: 10px; border-color: transparent transparent var(--color_2) transparent; 
+}
+
+#summary_container .arrow_show_summary 
+{
+    width:6vw; top:3vw;position: absolute; left:7vw;
+}
+#summary_container .arrow_show_summary svg {width:100%;}
+#summary_container .arrow_show_summary svg path {fill:var(--color_4);}
+
+@media only screen and (max-width:900px) and (min-width:600px)
+{
+    #summary_container {width:40%;}
+    #summary_container .summary {top:14vw; height:50vw;}
+    #summary_container h2 {padding-bottom: 1.5vw; font-size: 3vw;}
+    #summary_container  p {margin: 1vw 0; font-size: 1.8vw;}
+    #summary_container .total p {font-size: 2.2vw;}
+    #summary_container .totals_btn button {font-size: 2.6vw; padding: 1vw 0vw;}
+}
+
+@media only screen and (max-width:600px)
+{
+    #summary_container {width:100%; overflow-y: hidden;  height:00px; }
+    #summary_container .summary
+    {
+        display: block; position: fixed; padding-top: 7vw; width:100%; top:auto; height:500px; 
+        bottom:-440px; left:0; z-index:1000; transition:bottom 0.5s ease;
+    }    
+    #show_summary_btn {display: block;}
+    #summary_container h2 {padding-bottom: 1.5vw; font-size: 5vw;}
+    #summary_container  p {margin: 1vw 0; font-size: 4vw;}
+    #summary_container .total p {font-size: 5vw;}
+    #products_detail .container::-webkit-scrollbar {width: .6vw;  border-radius: 2vw;}
+    #products_detail .container::-webkit-scrollbar-thumb {background: var(--color_1);border-radius: 2vw;}
+    #products_detail .container::-webkit-scrollbar-track {background: var(--color_4);border-radius: 2vw;}
+    #products_detail .container {max-height: 50vh; overflow-y: auto; margin-top: 2vw;}
+    #products_detail .detail_module p {font-size: 3.4vw; margin-bottom: 2vw;}
+    #products_detail h3 {font-size: 4vw; margin: 1vw 0 0 0; padding-bottom: 1vw;}
+    
+    #summary_container .totals_btn {position: absolute; bottom:50px; width:90%; text-align: center;}
+    
+    #summary_container .totals_btn button {visibility: hidden;}
+}
